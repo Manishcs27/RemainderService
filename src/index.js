@@ -19,7 +19,7 @@ const setupAndStartServer = () => {
 
     app.post('/api/v1/tickets', ticketController.create);
 
-    app.listen(PORT, '127.0.0.1', () => {
+    app.listen(PORT, () => {
         console.log(`Remainder Service is running on port ${PORT}`);
     // sendBasicEmail(
     //     'sender@example.com',
